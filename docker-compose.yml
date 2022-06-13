@@ -1,0 +1,18 @@
+# version of dockerfile
+version: '3.7'
+
+# run the container
+# 1 service is run 1 image of container
+# we can select many image for each service
+services:
+
+  # create image
+  app_occu_notify:
+    build:
+      context: .
+    # command: python demo.py
+    # just final script that ready to run
+
+  cratedb: 
+    build:
+      context: .
